@@ -73,8 +73,7 @@ public class Main {
                 age = -1;
             } catch (NumberFormatException ex) {
                 age = -1;
-            }
-            finally {
+            } finally {
                 if (age <= 0) {
                     System.out.println("Invalid input");
                     input.nextLine();
