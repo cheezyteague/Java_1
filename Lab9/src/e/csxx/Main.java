@@ -17,12 +17,11 @@ public class Main {
     	double total = 0, price = 0;
         int quantity= 0;
         Scanner fileread = null;
-	    File infile = new File(INPUTFILE);
+	File infile = new File(INPUTFILE);
         // Dont display if theres no file being processed.
-        if (infile.exists() == true) {
+        if (infile.exists()) {
            System.out.printf("%s%n","           Item Units Price");
         }
-
 	    // TODO - add code that reads the input file, prints a component report, and calculates total cost
         try {
             fileread = new Scanner(infile);
@@ -52,9 +51,9 @@ public class Main {
                 }
             }
             // Dont display if theres no file being processed.
-            if (infile.exists() == true) {
+            if (infile.exists()) {
                 // If the file is dirty (NumberFormatException), this format will round the dirty value
-                System.out.println(String.format("Total cost: %,.2f", total));
+                System.out.printf("Total cost: %,.2f", total);
             }
     }
 }
