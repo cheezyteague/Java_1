@@ -1,4 +1,0 @@
-Coke,2,2.99
-Pebsi,4,1.99
-Fanta,6,4.99
-Gatorade,3,4.99
